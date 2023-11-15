@@ -789,8 +789,8 @@ i{
 
 .donate-form{
     width: 80%;
-    position: absolute;
-    top: 26em;
+    /**position: absolute;
+    top: 26em;**/
     justify-self: center;
 }
 .donation-form{
