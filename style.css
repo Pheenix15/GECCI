@@ -213,7 +213,7 @@ i{
         background-image: url(./img/landinghero2.jpg);
     }
     75%{
-        background-image: url(./img/Environ.jpg);
+        background-image: url(./img/landinghero3.jpg);
     }
 }
 .hero{
@@ -736,7 +736,12 @@ i{
   }
 
 /*======DONATE PAGE===========*/
-
+.Donate-page-container{
+    background-image: url("./img/SDGs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+}
 .donate-page{
     display: grid;
 }
