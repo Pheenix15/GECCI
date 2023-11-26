@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
     <meta charset='utf-8'>
+    <meta name="description" content="Green Environment and Climate Change Initiative" />
+    <meta name="author" content="Pheenix" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+
     <link rel="stylesheet" href="swiper-bundle.min.css">
+
     <link rel="stylsheet" href="Fontawsome Web/fontawesome-free-5.15.3-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="Fontawsome Web/fontawesome-free-5.15.3-web/css/all.min.css">
     
     <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel='stylesheet' href='style.css'>
-    <script src='Script.js' defer></script>
+
+    <link rel='stylesheet' href="style.css">
+    <script src='Script.js'defer></script>
+    
     <title>Green Environment and Climate Change Initiative</title>
     
 </head>
 <body>
-    <section class="school-planting-hero">
+    <section class="team-hero">
         <div class="sticky">
             <header class="header">
                 <div class="slogan">
@@ -33,7 +39,7 @@
             </header>
             <header class="header-nav" id="header-nav">
                 <div>
-                    <img src="img/logo1.png" alt="">
+                    <img src="Img/logo1.png" alt="">
                 </div>
                 <button class="nav-toggle" id="nav-toggle" aria-controls="Nav" aria-expanded="false">
                     <i class="fa fa-bars" style="color: #fff;"></i>
@@ -43,7 +49,7 @@
                 </button>
                 <nav class="navBar">
                     <ul id="Nav" data-visible="false" class="Nav">
-                        <li>
+                        <li class="active">
                             <a href="index.html">
                                 <span aria-hidden="true"></span>HOME
                             </a></li>
@@ -133,45 +139,83 @@
                 </nav>
             </header>
         </div>
-    
         <div class="hero-content overtext planting-hero-content">
-        <H2>TREE PLANTING IN SCHOOLS</H2>
+        <H2>MEET OUR TEAM</H2>
         </div>
     </section>
+   <section>
+    <div class="ad-container">
+        <h1>Advisory Board</h1>
+        <div class="team-members">
+            <div class="ad-board ad-board-1">
+                <div class="ad-image">
+                    <img class="ad-img" src="./img/Ad-board-1.jpg">
+                </div>
+                <div class="ad-content">
+                    <h2 class="name">Cynthia Onyangore (India)</h2>
+                    <p class="discription">Strategic Management and Sustainability Professional</p>
+                    <button onclick="togglePopup()">Read Profile</button>
+                </div>
 
-    <section>
-        <div class="Tree-planting">
-            <div class="st-john school swiper">
-                <h3>IMAGES OF TREE PLANTING IN ST. JOHN OF GOD SECONDARY SCHOOL, AWKA</h3>
-                <div class="planting-images slide-content">
-                    <div class="image-list swiper-wrapper">
-                        <img src="img/Tree Planting/Schools/Tree-planting-sjhs-1.jpg" class="sliding-img swiper-slide" >
-                        <img src="img/Tree Planting/Schools/Tree-planting-sjhs-2.jpg" class="sliding-img swiper-slide" >
-                        <img src="img/Tree Planting/Schools/Tree-planting-sjhs-3.jpg" class="sliding-img swiper-slide" >
-                        <img src="img/Tree Planting/Schools/Tree-planting-sjhs-4.jpg" class="sliding-img swiper-slide" >
+                <div class="popup popup-1" id="popup-1">
+                    <div class="popup-overlay"></div>
+                    <div class="popup-content">
+                        <div class="popup-header">
+                            <div class="popup-close" onclick="togglePopup()">&times;</div>
+                            <h2>Cynthia Onyangore</h2>
+                        </div>
+                        <p>Cynthia Onyangore is a strategic management and sustainability professional with 18 years of experience in Kenya, USA, Middle East and Europe, spanning different areas of expertise including strategic planning, finance and food systems. She is particularly passionate about building resilient and sustainable agriculture value chains using a systems approach that ensures inclusivity of all stakeholders and processes. Her present focus areas are ensuring profitable and well-functioning organizations, while adhering to the 3Ps of sustainability (people, planet, profits), while doing no harm to the environment. She holds an MBA from Baker University, USA, Msc in Agricultural Production Chain Management from Van Hall Larenstein University of Applied Sciences, Netherlands and is a recipient of Fellowships from the International Sustainability Academy, Hamburg, Germany and the Swedish Institute, Sweden. She enjoys travel, music, cooking and reading in her free time.</p>
                     </div>
                 </div>
-                <div class="swiper-button-next swiper-btn"></div>
-                <div class="swiper-button-prev swiper-btn"></div>
-                <div class="swiper-pagination"></div>
             </div>
+            
+            <div class="ad-board ad-board-2">
+                <div class="ad-image">
+                    <img class="ad-img" src="./img/Ad-board-2.jpg">
+                </div>
+                <div class="ad-content">
+                    <h2 class="name">Dr. Pawan Kumar Sharma</h2>
+                    <p class="discription">Scientist at Sher-e-Kashmir University of Agricultural Science &amp; Technology Jammu, India.</p>
+                    <button onclick="togglePopup2()">Read Profile</button>
+                </div>
 
-            <div class="st-joseph school swiper">
-                <h3>IMAGES OF TREE PLANTING IN ST. JOSEPH NURSERY AND PRIMARY SCHOOL, NNEWI</h3>
-                <div class="planting-images slide-content">
-                    <div class="image-list swiper-wrapper">
-                        <img src="img/Tree Planting/Schools/Tree-planting-sjnps-1.jpg" class="sliding-img swiper-slide" >
-                        <img src="img/Tree Planting/Schools/Tree-planting-sjnps-2.jpg" class="sliding-img swiper-slide" >
-                        <img src="img/Tree Planting/Schools/Tree-planting-sjnps-3.jpg" class="sliding-img swiper-slide" >
+                <div class="popup popup-2" id="popup-2">
+                    <div class="popup-overlay"></div>
+                    <div class="popup-content">
+                        <div class="popup-header">
+                            <div class="popup-close" onclick="togglePopup2()">&times;</div>
+                            <h2>Dr. Pawan Kumar Sharma (Ph.D.)</h2>
+                        </div>
+                        <p>Dr. Pawan Kumar Sharma (Ph.D.) in Agricultural Economics and presently
+                            working as Scientist (Agricultural Economics) in Sher-e-Kashmir University of
+                            Agricultural Sciences &amp; Technology of Jammu (J&amp;K), India. He has more
+                            than 16 years of experience in teaching, research, and extension
+                            services. Dr. Pawan has guided more than 10 PG/Ph.D. students in agricultural
+                            economics. He has been engaged in teaching courses related to environmental
+                            economics and natural resource economics. Dr. Sharma is involved in developing,
+                            testing, and refining climate friendly and sustainable agriculture technologies
+                            for dissemination to the farmers through frontline demonstrations. He is a
+                            fellow of International Sustainability Academy (ISA), Hamburg, Germany and
+                            worked on the exploration of innovative climate-resilient technologies for
+                            sustainable production under climate change. He has handled more than 10
+                            externally funded national and international projects, including that of
+                            The South Asian Network for Development and Environmental Economics
+                            (SANDEE)-ICIMOD, Nepal. He has done extensive work on mitigating the
+                            effect of climate change through crop insurance and conservation practices. Dr.
+                            Sharma has published more than 40 research papers on different aspects of
+                            agriculture in journals of national and international repute. He has also published
+                            more than 06 books and 10 extension bulletins.
+                            </p>
                     </div>
                 </div>
-                <div class="swiper-button-next swiper-btn"></div>
-                <div class="swiper-button-prev swiper-btn"></div>
-                <div class="swiper-pagination"></div>
             </div>
             
         </div>
-    </section>
+    </div>
+
+    
+   </section>
+
 
     <footer class="footer">
         <div class="footer-content">
@@ -210,16 +254,16 @@
                 <h3>OUR PROJECTS</h3>
                 <ul>
                     <li>
-                        <a href="Project.html">PROJECTS</a>
+                        <a href="./Project.html">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="blog.html">BLOG</a>
+                        <a href="./blog.html">BLOG</a>
                     </li>
                     <li>
-                        <a href="Membership.html">MEMBERSHIP</a>
+                        <a href="./Membership.html">MEMBERSHIP</a>
                     </li>
                     <li>
-                        <a href="Volunteer.html">VOLUNTEER</a>
+                        <a href="./Volunteer.html">VOLUNTEER</a>
                     </li>
                 </ul>
             </div>
@@ -229,9 +273,7 @@
             <p>designed by PHEENIX</p>
         </div>
     </footer>
-
-
-    <!---=======SWIPER JS=====-------->
+    <!---=======SWIPER AND JS=====-------->
     <script src="swiper-bundle.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>

@@ -1247,9 +1247,129 @@ form{
     transform: translateY(0px);
   }
 
+
+
+
+  /*=======TEAM PAGE=========*/
+
+  .team-hero{
+    background-image: url(./img/Team-hero.jpg);
+    background-color: rgb(13, 80, 9, 0.7);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+  .ad-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ad-container h1{
+    color: rgb(13, 80, 9, 1);
+    align-self: center;
+  }
+  .team-members{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+  }
+  .ad-image{
+    width: 70%;
+  }
+
+  .ad-img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .ad-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    object-fit: contain;
+  }
+  .ad-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2em;
+    text-align: center;
+  }
+  .ad-content p{
+
+  }
+
+  .popup .popup-overlay{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .popup .popup-content{
+    position: absolute;
+    /*
+    top: 50%;*/
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    border: 1px solid rgb(13, 80, 9, 0.7);
+    width: 450px;
+    z-index: 2;
+    text-align: justify;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .popup-content p{
+    padding: 20px;
+  }
+  .popup-header{
+    background-color: rgb(13, 80, 9, 1);
+  }
+  .popup-header h2{
+    padding: 15px 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  .popup .popup-close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .popup.active-popup .popup-overlay{
+    display: block;
+  }
+
+  .popup.active-popup .popup-content{
+    transition: all 300ms ease-in;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
 /**************************
 ***************************
-*****PROJECT PAGES END*****
+*****MOBILE RESPONSIVE CSS*****
 ***************************
 **************************/
 @media (max-width: 454px){
@@ -1313,24 +1433,28 @@ form{
 *****DONATE SECTION*****
 =======================*/
 
-.donate{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    margin: 2em 2em;
-}
+    .donate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        margin: 2em 2em;
+    }
 
-.donate h2{
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
-}
-.donate p{
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-}
+    .donate h2{
+        font-size: 2em;
+        color: #fff;
+        text-align: center;
+    }
+    .donate p{
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .popup .popup-content{
+        width: 80%;
+      }
 }
 @media screen and (max-width: 768px) {
     .slide-content{
