@@ -129,10 +129,27 @@ function tab3() {
 
 
 
+function toggleTmPopup(){
+    document.getElementById("Tmpopup-1").classList.toggle("active-popup");
+}
+
+function toggleTmPopup2(){
+    document.getElementById("Tmpopup-2").classList.toggle("active-popup");
+}
+
+function toggleTmPopup3(){
+    document.getElementById("Tmpopup-3").classList.toggle("active-popup");
+}
+
+
 function togglePopup(){
     document.getElementById("popup-1").classList.toggle("active-popup");
 }
 
 function togglePopup2(){
     document.getElementById("popup-2").classList.toggle("active-popup");
+}
+
+function togglePopup3(){
+    document.getElementById("popup-3").classList.toggle("active-popup");
 }
