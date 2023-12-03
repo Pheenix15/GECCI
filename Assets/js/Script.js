@@ -1,31 +1,3 @@
-
-/*====DISABLE HOVER ON TOUCH DEVICES====*/
-function hasTouch() {
-    return 'ontouchstart' in document.documentElement
-           || navigator.maxTouchPoints > 0
-           || navigator.msMaxTouchPoints > 0;
-  }
-  
-  if (hasTouch()) { // remove all the :hover stylesheets
-    try { // prevent exception on browsers not supporting DOM styleSheets properly
-      for (var si in document.styleSheets) {
-        var styleSheet = document.styleSheets[si];
-        if (!styleSheet.rules) continue;
-  
-        for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-          if (!styleSheet.rules[ri].selectorText) continue;
-  
-          if (styleSheet.rules[ri].selectorText.match(':hover')) {
-            styleSheet.deleteRule(ri);
-          }
-        }
-      }
-    } catch (ex) {}
-  }
-
-
-
-
 /*****NAVIGATION BAR*****/
 /**const nav = document.querySelector(".Nav");
 const navToggle = document.querySelector(".nav-toggle");
@@ -60,6 +32,11 @@ navToggle.addEventListener('click', () => {
         document.querySelector('#nav-toggle').style.display = 'none';
     }
 
+   
+
+    
+
+    console.log(visibility);
 })
 
 
@@ -72,34 +49,9 @@ navToggleClose.addEventListener('click', () => {
         document.querySelector('#nav-toggle-close').style.display = 'none';
         document.querySelector('#nav-toggle').style.display = 'block';
     }    
+
+    console.log(visibility);
 })
-const span = document.querySelectorAll('.span');
-const tab = document.querySelectorAll('.tab');
-
-/*DROPDOWN TAB 4 MOBILE*/
-function dropdown(){
-    document.querySelector('.tab1').classList.toggle('dropdown')
-}
-function dropdown2(){
-    document.querySelector('.tab2').classList.toggle('dropdown')
-}
-function dropdown3(){
-    document.querySelector('.tab3').classList.toggle('dropdown')
-}
-
-/*INNER-TAB DROPDOWN 4 MOBILE*/
-function innerTabDropdown(){
-    document.querySelector('.inner-tab-1').classList.toggle('inner-tab-active')
-}
-function innerTabDropdown2(){
-    document.querySelector('.inner-tab-2').classList.toggle('inner-tab-active')
-}
-function innerTabDropdown3(){
-    document.querySelector('.inner-tab-3').classList.toggle('inner-tab-active')
-}
-function innerTabDropdown4(){
-    document.querySelector('.inner-tab-4').classList.toggle('inner-tab-active')
-}
 
 /*****NAVIGATION BAR END*****/
 
@@ -177,27 +129,3 @@ function tab3() {
 
 
 
-function toggleTmPopup(){
-    document.getElementById("Tmpopup-1").classList.toggle("active-popup");
-}
-
-function toggleTmPopup2(){
-    document.getElementById("Tmpopup-2").classList.toggle("active-popup");
-}
-
-function toggleTmPopup3(){
-    document.getElementById("Tmpopup-3").classList.toggle("active-popup");
-}
-
-
-function togglePopup(){
-    document.getElementById("popup-1").classList.toggle("active-popup");
-}
-
-function togglePopup2(){
-    document.getElementById("popup-2").classList.toggle("active-popup");
-}
-
-function togglePopup3(){
-    document.getElementById("popup-3").classList.toggle("active-popup");
-}

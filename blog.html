@@ -44,55 +44,56 @@
             </button>
             <nav class="navBar">
                 <ul id="Nav" data-visible="false" class="Nav">
-                    <li>
+                    <li class="active">
                         <a href="index.html">
                             <span aria-hidden="true"></span>HOME
                         </a></li>
                     <li>
-                        <a href="">
+                        <a href="#" class="span" onclick="dropdown()">
                             <span aria-hidden="true"></span>WHO WE ARE
                             <i class="fa fa-angle-down"></i>
                         </a>
-                        <div class="tab">
+                        <div class="tab tab1">
                             <ul>
-                                <li><a href="index.html#about-section">ABOUT US</a></li>
+                                <li><a href="#about-section">ABOUT US</a></li>
                                 <li><a href="Team.html">OUR TEAM</a></li>
     
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="Project.html">
+                        <a href="#" class="span" onclick="dropdown2()">
                             <span aria-hidden="true"></span>PROJECTS
-                        </a><i class="fa fa-angle-down"></i>
-                        <div class="tab">
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="tab tab2">
                             <ul>
                                 <li><a href="EcosystemRestoration.html">ECOSYSTEM RESTORATION</a></li>
-                                <li><a href="#">ENVIRONMENTAL EDUCATION</a><i class="fa fa-angle-right" style="color: #ffffff;"></i>
-                                    <div class="inner-tab">
+                                <li><a href="#" onclick="innerTabDropdown()">ENVIRONMENTAL EDUCATION <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
+                                    <div class="inner-tab inner-tab-1">
                                         <ul>
-                                            <li><a href="">SCHOOLS</a></li>
-                                            <li><a href="">COMMUNITIES</a></li>
+                                            <li><a href="#">SCHOOLS</a></li>
+                                            <li><a href="#">COMMUNITIES</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">TREE PLANTING</a><i class="fa fa-angle-right" style="color: #ffffff;"></i>
-                                    <div class="inner-tab">
+                                <li><a href="#" onclick="innerTabDropdown2()">TREE PLANTING <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
+                                    <div class="inner-tab inner-tab-2">
                                         <ul>
                                             <li><a href="Tree-planting-schools.html">SCHOOLS</a></li>
                                             <li><a href="">COMMUNITIES</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="">GREEN HANGOUT</a><i class="fa fa-angle-right" style="color: #ffffff;"></i>
-                                    <div class="inner-tab">
+                                <li><a href="#" onclick="innerTabDropdown3()">GREEN HANGOUT <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
+                                    <div class="inner-tab inner-tab-3">
                                         <ul>
                                             <li><a href="GreenHangout.html">GREEN HANGOUT 2022</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="">CLIMATE BOOTCAMP</a><i class="fa fa-angle-right" style="color: #ffffff;"></i>
-                                    <div class="inner-tab">
+                                <li><a href="#" onclick="innerTabDropdown4()">CLIMATE BOOTCAMP <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
+                                    <div class="inner-tab inner-tab-4">
                                         <ul>
                                             <li><a href="ClimateBootcamp.html">ANAMBRA CLIMATE BOOTCAMP 2023</a></li>
                                         </ul>
@@ -101,15 +102,16 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="blog.html">
                             <span aria-hidden="true"></span>BLOG
                         </a></li>
                     <li>
-                        <a href="">
+                        <a href="#" class="span" onclick="dropdown3()">
                             <span aria-hidden="true"></span>GET INVOLVED
-                        </a><i class="fa fa-angle-down"></i>
-                        <div class="tab">
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="tab tab3">
                             <ul>
                                 <li><a href="Membership.html">BECOME A MEMBER</a></li>
                                 <li><a href="Volunteer.html">VOLUNTEER</a></li>
@@ -124,7 +126,7 @@
                     </li>
 
                         <button>
-                            <a href="Donate.html" class="nav-cta">
+                            <a href="Donate.html" class="nav-cta ">
                                 <span aria-hidden="true"></span>DONATE
                             </a>
                         </button>
