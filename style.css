@@ -160,58 +160,6 @@ i{
 .navBar ul button{
     margin-left: 2em;
 }
-/*
-.navBar ul li:hover .tab{
-    display: flex;
-    position: absolute;
-    background: rgb(13, 80, 9, 0.7);
-    margin-top: 25px;
-    margin-left: -15px;
-}
-**/
-/*@keyframes rotate{
-    to{
-        transform: rotate(180deg);
-    }
-}
-
-.navBar ul li a:hover i{
-    rotate: 180deg;
-    transition: 1s ease;
-    
-}
-
-.navBar ul li i{
-    color: rgb(13, 80, 9, 1);
-}
-
-.navBar ul li:hover .tab ul{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-    margin-right: 5px;
-}
-.navBar ul li:hover .tab ul li{
-    padding: 10px 0;
-    text-align: left;
-    border-bottom: 1px dotted #fff;
-    border-radius: 0;
-    background: transparent;
-}
-.navBar ul li:hover .tab ul li:last-child{
-    border-bottom: none;
-}
-.navBar ul li:hover .tab ul li a{
-    font-size: 12px;
-    color: #fff;
-}
-.navBar ul li:hover .tab ul li a:hover{
-     color: rgb(4, 27, 10);
-}
-.navBar ul button{
-    margin-left: 2em;
-}
-**/
 
 /***======================*
 ====INNER TABS**/   
@@ -250,39 +198,7 @@ i{
 .tab ul li .inner-tab-active ul li:hover a{
      color: rgb(4, 27, 10);
 }
-/**
-.tab ul li:hover .inner-tab{
-    display: flex;
-    position: absolute;
-    background: rgb(13, 80, 9, 0.7);
-    margin-top: -20px;
-    margin-left: 12em;
-}
 
-.tab ul li:hover .inner-tab ul{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-}
-.tab ul li:hover .inner-tab ul li{
-    width: 150px;
-    padding: 10px 0;
-    text-align: left;
-    border-bottom: 1px solid #fff;
-    border-radius: 0;
-    background: transparent;
-}
-.tab ul li:hover .inner-tab ul li:last-child{
-    border-bottom: none;
-}
-.tab ul li:hover .inner-tab ul li a{
-    font-size: 12px;
-    color: #fff;
-}
-.tab ul li:hover .inner-tab ul li a:hover{
-     color: rgb(4, 27, 10);
-}
-*/
 
 /*****NAV ENDING*****/
 @keyframes change {
@@ -1664,51 +1580,7 @@ form{
     .tab ul li .inner-tab-active ul li{
         width: fit-content;
     }
-/******
-    .navBar ul li:hover .tab{
-        display: flex;
-        position:relative;
-        background: transparent;
-        margin-top: 25px;
-        margin-left: -65px;
-    }
 
-    .Nav li:hover{
-        background: transparent;
-    }
-    .navBar ul li:hover .tab ul{
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0;
-        padding: 0;
-    }
-    .navBar ul li:hover .tab ul li{
-        width: fit-content;
-    }
-
-    ***======================*
-    ====INNER TABS**    
-    .tab ul li:hover .inner-tab{
-        display: flex;
-        position:relative;
-        background: transparent;
-        margin-top: 25px;
-        margin-left: -8em;
-    }
-
-    .tab li:hover{
-        background: transparent;
-    }
-    .tab ul li:hover .inner-tab ul{
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0;
-        padding: 0;
-    }
-    .tab ul li:hover .inner-tab ul li{
-        width: fit-content;
-    }
-******/
 
 /*****NavBar CSS ENDS********/
 
