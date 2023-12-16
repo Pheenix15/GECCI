@@ -1,5 +1,5 @@
 
-/*====DISABLE HOVER ON TOUCH DEVICES====*/
+/*====DISABLE HOVER ON TOUCH DEVICES=============
 function hasTouch() {
     return 'ontouchstart' in document.documentElement
            || navigator.maxTouchPoints > 0
@@ -22,7 +22,7 @@ function hasTouch() {
       }
     } catch (ex) {}
   }
-
+==================================================*/
 
 
 
@@ -76,7 +76,7 @@ navToggleClose.addEventListener('click', () => {
 const span = document.querySelectorAll('.span');
 const tab = document.querySelectorAll('.tab');
 
-/*DROPDOWN TAB 4 MOBILE*/
+/*DROPDOWN TAB*/
 function dropdown(){
     document.querySelector('.tab1').classList.toggle('dropdown')
 }
@@ -87,7 +87,7 @@ function dropdown3(){
     document.querySelector('.tab3').classList.toggle('dropdown')
 }
 
-/*INNER-TAB DROPDOWN 4 MOBILE*/
+/*INNER-TAB DROPDOWN*/
 function innerTabDropdown(){
     document.querySelector('.inner-tab-1').classList.toggle('inner-tab-active')
 }
@@ -138,6 +138,7 @@ var swiper = new Swiper(".slide-content", {
   });
 /*****SWIPER JS*****/
 
+/*****ABOUT-US TABS*****/
 const tabBtn = document.querySelectorAll('.tab-btn');
 tabBtn.forEach(tabBtn => {
     tabBtn.addEventListener('click', () =>{
@@ -177,6 +178,7 @@ function tab3() {
 
 
 
+/*****TEAM POP-UP*****/
 function toggleTmPopup(){
     document.getElementById("Tmpopup-1").classList.toggle("active-popup");
 }
@@ -189,7 +191,7 @@ function toggleTmPopup3(){
     document.getElementById("Tmpopup-3").classList.toggle("active-popup");
 }
 
-
+/*****ADVISORY BOARD POP-UP*****/
 function togglePopup(){
     document.getElementById("popup-1").classList.toggle("active-popup");
 }
