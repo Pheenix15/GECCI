@@ -42,7 +42,7 @@
                 </button>
                 <nav class="navBar">
                     <ul id="Nav" data-visible="false" class="Nav">
-                        <li class="active">
+                        <li>
                             <a href="index.html">
                                 <span aria-hidden="true"></span>HOME
                             </a></li>
@@ -140,13 +140,16 @@
 
     <section class="Form-section member-page">
         <div class="membership-form">
-            <form class="member-form" action="https://formsubmit.co/33d4bfd75d0ab45fc3f21a9ed97c1122" method="POST">
+            <form class="member-form" action="https://formsubmit.co/191d3bfecb291facdd6ba2efb8365a" method="POST">
                 <h3>JOIN GECCI</h3>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="hidden" name="_subject" value="New Membership">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Enter Email" required>
                 <input type="text" name="PhoneNumber" placeholder="Enter Your Phone Number" required>
-                <textarea name="Message" placeholder="Why do you want to join GECCI"></textarea>
+                <textarea name="Why I want to join Gecci" placeholder="Why do you want to join GECCI"></textarea>
                 <button class="member-btn" type="submit">BECOME A MEMBER</button>
+                <input type="hidden" name="_next" value="http://geccinitiative.org/Membership_thank-you.html">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
