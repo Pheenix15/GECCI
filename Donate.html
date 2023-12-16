@@ -48,8 +48,8 @@
                 </button>
                 <nav class="navBar">
                     <ul id="Nav" data-visible="false" class="Nav">
-                        <li>
-                            <a href="index.html">
+                        <li class="active">
+                            <a href="./">
                                 <span aria-hidden="true"></span>HOME
                             </a></li>
                         <li>
@@ -60,7 +60,7 @@
                             <div class="tab tab1">
                                 <ul>
                                     <li><a href="#about-section">ABOUT US</a></li>
-                                    <li><a href="Team.html">OUR TEAM</a></li>
+                                    <li><a href="./Team">OUR TEAM</a></li>
         
                                 </ul>
                             </div>
@@ -72,7 +72,7 @@
                             </a>
                             <div class="tab tab2">
                                 <ul>
-                                    <li><a href="EcosystemRestoration.html">ECOSYSTEM RESTORATION</a></li>
+                                    <li><a href="./EcosystemRestoration">ECOSYSTEM RESTORATION</a></li>
                                     <li><a href="#" onclick="innerTabDropdown()">ENVIRONMENTAL EDUCATION <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
                                         <div class="inner-tab inner-tab-1">
                                             <ul>
@@ -84,7 +84,7 @@
                                     <li><a href="#" onclick="innerTabDropdown2()">TREE PLANTING <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
                                         <div class="inner-tab inner-tab-2">
                                             <ul>
-                                                <li><a href="Tree-planting-schools.html">SCHOOLS</a></li>
+                                                <li><a href="./Tree-planting-schools">SCHOOLS</a></li>
                                                 <li><a href="">COMMUNITIES</a></li>
                                             </ul>
                                         </div>
@@ -92,14 +92,14 @@
                                     <li><a href="#" onclick="innerTabDropdown3()">GREEN HANGOUT <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
                                         <div class="inner-tab inner-tab-3">
                                             <ul>
-                                                <li><a href="GreenHangout.html">GREEN HANGOUT 2022</a></li>
+                                                <li><a href="./GreenHangout">GREEN HANGOUT 2022</a></li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li><a href="#" onclick="innerTabDropdown4()">CLIMATE BOOTCAMP <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
                                         <div class="inner-tab inner-tab-4">
                                             <ul>
-                                                <li><a href="ClimateBootcamp.html">ANAMBRA CLIMATE BOOTCAMP 2023</a></li>
+                                                <li><a href="./ClimateBootcamp">ANAMBRA CLIMATE BOOTCAMP 2023</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -107,7 +107,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="blog.html">
+                            <a href="./blog">
                                 <span aria-hidden="true"></span>BLOG
                             </a></li>
                         <li>
@@ -117,20 +117,20 @@
                             </a>
                             <div class="tab tab3">
                                 <ul>
-                                    <li><a href="Membership.html">BECOME A MEMBER</a></li>
-                                    <li><a href="Volunteer.html">VOLUNTEER</a></li>
+                                    <li><a href="./Membership">BECOME A MEMBER</a></li>
+                                    <li><a href="./Volunteer">VOLUNTEER</a></li>
                                     <li><a href="#">EVENTS</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="Contact.html">
+                            <a href="./Contact">
                                 <span aria-hidden="true"></span>CONTACT
                             </a>
                         </li>
 
                             <button>
-                                <a href="Donate.html" class="nav-cta ">
+                                <a href="./Donate" class="nav-cta ">
                                     <span aria-hidden="true"></span>DONATE
                                 </a>
                             </button>
@@ -159,17 +159,16 @@
         </div>
         <section class="Form-section donate-page">
             <div class="donate-form">
-                <form class="donation-form" action="https://formsubmit.co/191d3bfecb291facdd6ba2efb8365a" method="POST">
+                <form class="donation-form" action="https://formsubmit.co/33d4bfd75d0ab45fc3f21a9ed97c1122" method="POST">
                     <h3>JOIN GECCI</h3>
-                    <input type="hidden" name="_subject" value="New Donor">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Enter Email" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
                     <input type="text" name="PhoneNumber" placeholder="Enter Your Phone Number" required>
                     <input type="text" name="Amount Donated" placeholder="Amount Donated">
-                    <textarea name="Donor Suggestions" placeholder="Do you have any Suggestions for us?"></textarea>
+                    <textarea name="Message" placeholder="Do you have any Suggestions for us?"></textarea>
                     <button class="form-btn" type="submit">Donate</button>
-                    <input type="hidden" name="_next" value="http://geccinitiative.org/Donate_thank-you.html">
-                <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="Donate_thank-you.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </section>
