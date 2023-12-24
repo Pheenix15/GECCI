@@ -455,7 +455,7 @@ i{
     margin-top: 15px;
 }
 
-/****OVERLAY****/
+/****IMAGE OVERLAY****/
 
 .image{
     position: relative;
@@ -484,7 +484,7 @@ i{
   }
 
 
-/***OVERLAY***********/
+/***IMAGE OVERLAY END***********/
 /****VOLUNTEER SECTION****/
 .volunteer-section{
     display: flex;
@@ -700,6 +700,29 @@ i{
 }
 
 /******MEET THE TEAM******/
+
+/******EVENT SECTION*****/
+.upcoming-event-section{
+    background-image: url(./img/Events/event-youth-policy.jpg);
+    background-blend-mode: overlay;
+    background-color: rgb(13, 80, 9, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming-event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 1em;
+}
+
 .overtext{
     color: #fff;
     align-items: center;
@@ -1001,6 +1024,155 @@ form{
 
 /******TREE-PLANTING PAGE ENDS*********/
 
+/****************EVENTS PAGE***********/
+
+.Events-hero{
+    background-image: url(./img/Events/Event-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 65vh;
+}
+.events-hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13em 0;
+    text-align: center;
+    color: #fff;
+}
+.events-section{
+    margin: 2em 0;
+}
+.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 1em;
+}
+
+.event-box{
+    /*Comment for more than two boxex*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* uncomment For multile boxes 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    */
+}
+.event-content img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.event-content{
+    position: relative;
+    width: 50%;
+}
+
+.event-txt{
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(13, 80, 9, 0.5);
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.event-txt p{
+    padding: 5px 0;
+    font-size: 15px;
+
+}
+
+.event-txt span{
+    visibility: hidden;
+    opacity: 0;
+    padding: 1em;
+}
+.event-txt:hover{
+    height: 200px;
+    transition: 1s ease-out;
+}
+
+.event-content:hover .event-txt{
+    height: 200px;
+    transition: 0.7s ease-out;  
+}
+
+.event-content:hover .event-txt span{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+ 
+.event-txt:hover span{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+.event-cto{
+    font-size: 15px;
+}
+
+.project-btn{
+    margin-top: 15px;
+}
+
+/***********EVENTS PAGE END****************/
+
+/***********EVENTS****************/
+
+/***********YOUTH POLICY****************/
+.youth-policy-hero{
+    background-image:url(/img/Events/youth-policy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 65vh;
+}
+.youth-policy-hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13em 0;
+    text-align: center;
+    color: #fff;
+}
+.GECCI-youth-policy{
+    padding: 1em 2em;
+}
+
+.youth-policy-txt{
+    padding: 2em 1em;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.gecci-link{
+    color: rgb(13, 80, 9, 1);
+}
+
+a .gecci-link{
+    text-decoration: solid;
+}
+
+
+/***********EVENTS END****************/
+
 /*//**********FOOTER****************/
 
 .footer{
@@ -1118,6 +1290,7 @@ form{
     background-image:url(./img/GreenHangout/GH-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 85vh;
 }
@@ -1178,6 +1351,7 @@ form{
     background-image:url(./img/InternationalDayOfForests/hero-idf.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 85vh;
 }
@@ -1191,6 +1365,7 @@ form{
     background-image: url(./img/ClimateBootcamp/acb-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 85vh;
 }
