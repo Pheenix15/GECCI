@@ -1,30 +1,4 @@
 
-/*====DISABLE HOVER ON TOUCH DEVICES=============
-function hasTouch() {
-    return 'ontouchstart' in document.documentElement
-           || navigator.maxTouchPoints > 0
-           || navigator.msMaxTouchPoints > 0;
-  }
-  
-  if (hasTouch()) { // remove all the :hover stylesheets
-    try { // prevent exception on browsers not supporting DOM styleSheets properly
-      for (var si in document.styleSheets) {
-        var styleSheet = document.styleSheets[si];
-        if (!styleSheet.rules) continue;
-  
-        for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-          if (!styleSheet.rules[ri].selectorText) continue;
-  
-          if (styleSheet.rules[ri].selectorText.match(':hover')) {
-            styleSheet.deleteRule(ri);
-          }
-        }
-      }
-    } catch (ex) {}
-  }
-==================================================*/
-
-
 
 /*****NAVIGATION BAR*****/
 /**const nav = document.querySelector(".Nav");
@@ -46,61 +20,37 @@ navToggle.addEventListener('click', () => {
     console.log(visibility);
 })**/
 
-const nav = document.querySelector(".Nav");
-const navToggle = document.querySelector(".nav-toggle");
-const navToggleClose = document.querySelector(".nav-toggle-close")
+const menu = document.querySelector(".menu");
+const openMenuBtn = document.querySelector(".open-menu-btn");
+const closeMenuBtn = document.querySelector(".close-menu-btn");
 
-navToggle.addEventListener('click', () => {
-    const visibility = nav.getAttribute('data-visible');
+[openMenuBtn, closeMenuBtn].forEach((btn) => {
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("open");
+        menu.style.transition = "transform 0.5s ease";
+    });
+});
 
-    if(visibility === 'false') {
-        nav.setAttribute('data-visible', true);
-        navToggle.setAttribute('aria-expanded', true);
-        document.querySelector('#nav-toggle-close').style.display = 'block';
-        document.querySelector('#nav-toggle').style.display = 'none';
+menu.addEventListener("transitionend", function() {
+    this.removeAttribute("style");
+});
+
+menu.querySelectorAll(".dropdown > a, .dropdown > i").forEach((arrow) => {
+    arrow.addEventListener("click", function(){
+        this.closest(".dropdown").classList.toggle("active");
+    });
+});
+
+// Add event listener to remove "active" class when clicking outside
+document.addEventListener('click', function(e) {
+    const isClickInsideMenu = menu.contains(e.target);
+    if (!isClickInsideMenu) {
+        const allDropdowns = menu.querySelectorAll('.dropdown');
+        allDropdowns.forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
     }
-
-})
-
-
-navToggleClose.addEventListener('click', () => {
-    const visibility = nav.getAttribute('data-visible');
-
-    if(visibility === 'true') {
-        nav.setAttribute('data-visible', false);
-        navToggle.setAttribute('aria-expanded', false);
-        document.querySelector('#nav-toggle-close').style.display = 'none';
-        document.querySelector('#nav-toggle').style.display = 'block';
-    }    
-})
-const span = document.querySelectorAll('.span');
-const tab = document.querySelectorAll('.tab');
-
-/*DROPDOWN TAB*/
-function dropdown(){
-    document.querySelector('.tab1').classList.toggle('dropdown')
-}
-function dropdown2(){
-    document.querySelector('.tab2').classList.toggle('dropdown')
-}
-function dropdown3(){
-    document.querySelector('.tab3').classList.toggle('dropdown')
-}
-
-/*INNER-TAB DROPDOWN*/
-function innerTabDropdown(){
-    document.querySelector('.inner-tab-1').classList.toggle('inner-tab-active')
-}
-function innerTabDropdown2(){
-    document.querySelector('.inner-tab-2').classList.toggle('inner-tab-active')
-}
-function innerTabDropdown3(){
-    document.querySelector('.inner-tab-3').classList.toggle('inner-tab-active')
-}
-function innerTabDropdown4(){
-    document.querySelector('.inner-tab-4').classList.toggle('inner-tab-active')
-}
-
+});
 /*****NAVIGATION BAR END*****/
 
 
