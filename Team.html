@@ -22,123 +22,132 @@
     
 </head>
 <body>
-    <section class="team-hero">
-        <div class="sticky">
-            <header class="header">
-                <div class="slogan">
-                    <p class="RightToLeft">GECCI: Towards a Greener Future; United in Action&nbsp;&nbsp;&nbsp;</p>
-                    <p class="RightToLeft slogan2">GECCI: Towards a Greener Future; United in Action&nbsp;&nbsp;&nbsp;</p>
+    <div class="sticky">
+        <header class="header">
+            <div class="slogan">
+                <p class="RightToLeft">GECCI: Towards a Greener Future; United in Action&nbsp;&nbsp;&nbsp;</p>
+                <p class="RightToLeft slogan2">GECCI: Towards a Greener Future; United in Action&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            
+            <div class="header-icons">
+                <a target="_blank" href="https://www.facebook.com/GreenEnvironmentandClimateChangeInitiative/"><i class="fab fa-facebook-f" style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/green-environment-and-climate-change-initiative-gecci/"><i class="fab fa-linkedin-in" style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://twitter.com/GECC_Initiative"><i class="fab fa-twitter" style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://www.instagram.com/gecc_initiative/"><i class="fab fa-instagram" style="color: #ffffff;"></i></a>
+            </div>
+        </header>
+        <!---HEADER NAV-->
+        <header class="header-nav" id="header-nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
                 </div>
-                
-                <div class="header-icons">
-                    <a target="_blank" href="https://www.facebook.com/GreenEnvironmentandClimateChangeInitiative/"><i class="fab fa-facebook-f" style="color: #ffffff;"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/green-environment-and-climate-change-initiative-gecci/"><i class="fab fa-linkedin-in" style="color: #ffffff;"></i></a>
-                    <a target="_blank" href="https://twitter.com/GECC_Initiative"><i class="fab fa-twitter" style="color: #ffffff;"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/gecc_initiative/"><i class="fab fa-instagram" style="color: #ffffff;"></i></a>
-                </div>
-            </header>
-            <header class="header-nav" id="header-nav">
-                <div>
-                    <img src="img/logo1.png" alt="">
-                </div>
-                <button class="nav-toggle" id="nav-toggle" aria-controls="Nav" aria-expanded="false">
-                    <i class="fa fa-bars" style="color: #fff;"></i>
-                </button>
-                 <button class="nav-toggle-close" id="nav-toggle-close" aria-controls="Nav" aria-expanded="false">
-                    <i class="fa fa-times" style="color: #fff;"></i>
-                </button>
-                <nav class="navBar">
-                    <ul id="Nav" data-visible="false" class="Nav">
-                        <li class="active">
-                            <a href="./">
-                                <span aria-hidden="true"></span>HOME
-                            </a></li>
-                        <li>
-                            <a href="#" class="span" onclick="dropdown()">
-                                <span aria-hidden="true"></span>WHO WE ARE
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="tab tab1">
-                                <ul>
-                                    <li><a href="#about">ABOUT US</a></li>
-                                    <li><a href="./Team">OUR TEAM</a></li>
-        
-                                </ul>
-                            </div>
+                <nav class="menu">
+                    <div class="head">
+                        <div class="logo"><img src="img/logo.png" alt="logo"></div>
+                        <button type="button" class="close-menu-btn"></button>
+                    </div>
+                    <ul>
+                        <li><a href="./">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#">WHO WE ARE</a>
+                            <i class="fa fa-angle-down"></i>
+                            <ul class="tab">
+                                <li><a href="#about"><span>ABOUT US</span></a></li>
+                                <li><a href="./Team"><span>OUR TEAM</span></a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="span" onclick="dropdown2()">
-                                <span aria-hidden="true"></span>PROJECTS
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="tab tab2">
-                                <ul>
-                                    <li><a href="./EcosystemRestoration">ECOSYSTEM RESTORATION</a></li>
-                                    <li><a href="#" onclick="innerTabDropdown()">ENVIRONMENTAL EDUCATION <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
-                                        <div class="inner-tab inner-tab-1">
-                                            <ul>
-                                                <li><a href="#">SCHOOLS</a></li>
-                                                <li><a href="#">COMMUNITIES</a></li>
+                        <li class="dropdown">
+                            <a href="#">PROJECTS</a>
+                            <i class="fa fa-angle-down"></i>
+                            <ul class="tab">
+                                <!---ECOSYSTEM RESTORATION TAB-->
+                                <li class="sub-drodown dropdown"><a href="#"><span>ECOSYSTEM RESTORATION</span></a>
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="tab tab-right">
+                                        <li><a href="./Eco-Restoration-for-Climate-Action"><span>ECO-RESTORATION FOR CLIMATE ACTION PROJECT</span></a></li>
+                                    </ul>
+                                </li>
+                                <!---ENVIRONMENTAL EDUCATION TAB-->
+                                <li class="dropdown">
+                                    <a href="#"><span>ENVIRONMENTAL EDUCATION</span></a>
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="tab tab-right">
+                                        <!--ENVIRONMENTAL EDUCATION IN SCHOOLS-->
+                                        <li class="dropdown"><a href="#"><span>SCHOOLS</span></a></li>
+                                        <!--ENVIRONMENTAL EDUCATION IN COMMUNITIES TAB-->
+                                        <li class="dropdown"><a href="#"><span>COMMUNITIES</span></a>
+                                            <i class="fa fa-angle-down"></i>
+                                            <ul class="tab tab-right">
+                                                <li><a href="./Ebenebe-Climate-Resilience-Workshop"><span>EBENEBE CLIMATE RELISIENCE WORKSHOP</span></a></li>
+                                                <li><a href="./World-Forestry-Day-2022"><span>WORLD FORESTRY DAY 2022</span></a></li>
                                             </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="#" onclick="innerTabDropdown2()">TREE PLANTING <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
-                                        <div class="inner-tab inner-tab-2">
-                                            <ul>
-                                                <li><a href="./Tree-planting-schools">SCHOOLS</a></li>
-                                                <li><a href="">COMMUNITIES</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="#" onclick="innerTabDropdown3()">GREEN HANGOUT <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
-                                        <div class="inner-tab inner-tab-3">
-                                            <ul>
-                                                <li><a href="./GreenHangout">GREEN HANGOUT 2022</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="#" onclick="innerTabDropdown4()">CLIMATE BOOTCAMP <i class="fa fa-angle-right" style="color: #ffffff;"></i></a>
-                                        <div class="inner-tab inner-tab-4">
-                                            <ul>
-                                                <li><a href="./ClimateBootcamp">ANAMBRA CLIMATE BOOTCAMP 2023</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!---NATURE LAB PROJECT TAB-->
+                                <li class="dropdown">
+                                    <a href="#"><span>NATURE LAB PROJECT</span></a>
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="tab tab-right">
+                                        <li><a href="./Tree-planting-project"><span>TREE PLANTING</span></a></li>
+                                        <li><a href="./Tree-Nursery-project"><span>TREE NURSERY</span></a></li>
+                                    </ul>
+                                </li>
+                                <!---GREEN HANGOUT TAB-->
+                                <li class="dropdown">
+                                    <a href="#"><span>GREEN HANGOUT</span></a>
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="tab tab-right">
+                                        <li><a href="./GreenHangout"><span>GREEN HANGOUT 2022</span></a></li>
+                                    </ul>
+                                </li>
+                                <!---CLIMATE BOOTCAMP TAB-->
+                                <li class="dropdown">
+                                    <a href="#"><span>CLIMATE BOOTCAMP</span></a>
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="tab tab-right">
+                                        <li><a href="./Anambra-Climate-Bootcamp-2023"><span>ANAMBRA CLIMATE BOOTCAMP 2023</span></a></li>
+                                    </ul>
+                                </li>
+                                <!---YOUTH CLIMATE POLICY TRAINING TAB-->
+                                <li class="dropdown">
+                                    <a href="#"><span>YOUTH CLIMATE POLICY TRAINING</span></a>
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="tab tab-right">
+                                        <li><a href="./Youth-Climate-Policy-Training"><span>YOUTH CLIMATE POLICY TRAINING 2024</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="./blog">
-                                <span aria-hidden="true"></span>BLOG
-                            </a></li>
-                        <li>
-                            <a href="#" class="span" onclick="dropdown3()">
-                                <span aria-hidden="true"></span>GET INVOLVED
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="tab tab3">
-                                <ul>
-                                    <li><a href="./Membership">BECOME A MEMBER</a></li>
-                                    <li><a href="./Volunteer">VOLUNTEER</a></li>
-                                    <li><a href="#">EVENTS</a></li>
-                                </ul>
-                            </div>
+                        <li><a href="./blog">BLOG</a></li>
+                        <li class="dropdown">
+                            <a href="#">GET INVOLVED</a>
+                            <i class="fa fa-angle-down"></i>
+                            <ul class="tab">
+                                <li><a href="./Membership"><span>BECOME A MEMBER</span></a></li>
+                                <li><a href="./Volunteer"><span>VOLUNTEER</span></a></li>
+                                <li><a href="./Events"><span>EVENTS</span></a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="./Contact">
-                                <span aria-hidden="true"></span>CONTACT
-                            </a>
-                        </li>
-
-                            <button>
-                                <a href="./Donate" class="nav-cta ">
-                                    <span aria-hidden="true"></span>DONATE
-                                </a>
-                            </button>
+                        <li><a href="./Contact">CONTACT</a></li>
+                        <button type="button" class="nav-btn nav-donate-btn"><a href="https://flutterwave.com/donate/fopgfyqstegl" target="_blank">
+                            <span aria-hidden="true"></span>DONATE
+                        </a></button>
                     </ul>
+                    
                 </nav>
-            </header>
-        </div>
+                <div class="header-right">
+                    <button type="button" class="open-menu-btn">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="team-hero">
         <div class="hero-content overtext planting-hero-content">
         <H2>MEET OUR TEAM</H2>
         </div>
@@ -153,7 +162,7 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img src="img/Team1.png" alt="" class="card-img">
+                            <img src="img/Team1.png" alt="Image of GECCI, Founder/Executive Director Mrs Mmachukwu Loretta Obimdike" class="card-img">
                         </div>
                     </div>
 
@@ -191,7 +200,7 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img src="img/Team2.png" alt="" class="card-img">
+                            <img src="img/Team2.png" alt="Image of Dr. Oluropo Apalowo" class="card-img">
                         </div>
                     </div>
 
@@ -229,7 +238,7 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img src="img/Team3.png" alt="" class="card-img">
+                            <img src="img/Team3.png" alt="Image of Enwereuzo Chinemerem Divinefavour" class="card-img">
                         </div>
                     </div>
 
@@ -266,7 +275,7 @@
                         <span class="overlay"></span>
         
                         <div class="card-image">
-                            <img src="img/Ad-board-1.jpg" alt="" class="card-img">
+                            <img src="img/Ad-board-1.jpg" alt="Image of Cynthia Onyangore" class="card-img">
                         </div>
                     </div>
         
@@ -294,7 +303,7 @@
                         <span class="overlay"></span>
         
                         <div class="card-image">
-                            <img src="img/Ad-board-2.jpg" alt="" class="card-img">
+                            <img src="img/Ad-board-2.jpg" alt="Image of Dr. Pawan Kumar Sharma" class="card-img">
                         </div>
                     </div>
         
@@ -390,12 +399,14 @@
                 <li>
                     <a href="./Volunteer">VOLUNTEER</a>
                 </li>
+                <li>
+                    <a href="https://flutterwave.com/donate/fopgfyqstegl">DONATE</a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="copyright">
-        <p>copyright geccinitiative.org</p>
-        <p>designed by PHEENIX</p>
+        <p>&copy; geccinitiative.org 2024.</p>
     </div>
 </footer>
     <!---=======SWIPER AND JS=====-------->
